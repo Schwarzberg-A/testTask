@@ -1,0 +1,104 @@
+
+
+<section  class="main__field">
+  <button  (click)='visibleToggle()' type="submit" class="send btn">модальное окно</button>
+  <div class="form__wrapp" *ngIf='isVisible'>
+    <h2 class="form__head">Выбор получателя</h2>
+      <form class="form"  >
+        <div class="search__wrapp">
+          <input class="search" type="search" name="search" placeholder="Search">
+          <ul class="icons-list">
+            <li class="icon">
+              <a href="#"><img src="/assets/img/icons/eye.svg" alt=""></a>
+            </li>
+            <li class="icon">
+              <a href="#"><img src="/assets/img/icons/star.svg" alt=""></a>
+            </li>
+            <li class="icon">
+              <a href="#"><img src="/assets/img/icons/plus.svg" alt=""></a>
+            </li>
+            <li class="icon">
+              <a href="#"><img src="/assets/img/icons/pen.svg" alt=""></a>
+            </li>
+          </ul>
+        </div>  
+        <div class="scroll-wrapper">
+          <div class="recipients__wrapp scroll" data-simplebar id="scrolling" >
+            <ul class="recipients">
+              <li class="list-item" >
+                <label class="recipient">
+                  <img class="recipient__img" src="/assets/img/ava/1.png" alt="recipient">
+                  <input type="checkbox" class="src-only input">
+                  <span class="box"></span>
+                    <div class="recipient__info">
+                        <p class="recipient__name">Темирлан Темирбиев</p>
+                        <p class="recipient__position">Супервайзер</p>
+                    </div>
+                </label>
+              </li>
+              <li class="list-item" >
+                <label class="recipient">
+                  <img class="recipient__img" src="/assets/img/ava/2.png" alt="recipient">
+                  <input type="checkbox" class="src-only input">
+                  <span class="box"></span>
+                    <div class="recipient__info">
+                        <p class="recipient__name">Темирлан Темирбиев</p>
+                        <p class="recipient__position">Супервайзер</p>
+                    </div>
+                </label>
+              </li>
+              <li class="list-item" >
+                <label class="recipient">
+                  <img class="recipient__img" src="/assets/img/ava/3.png" alt="recipient">
+                  <input type="checkbox" class="src-only input">
+                  <span class="box"></span>
+                    <div class="recipient__info">
+                        <p class="recipient__name">Темирлан Темирбиев</p>
+                        <p class="recipient__position">Супервайзер</p>
+                    </div>
+                </label>
+              </li>
+              <li class="list-item" >
+                <label class="recipient">
+                  <img class="recipient__img" src="/assets/img/ava/1.png" alt="recipient">
+                  <input type="checkbox" class="src-only input">
+                  <span class="box"></span>
+                    <div class="recipient__info">
+                        <p class="recipient__name">Темирлан Темирбиев</p>
+                        <p class="recipient__position">Супервайзер</p>
+                    </div>
+                </label>
+              </li>
+              <li class="list-item" >
+                <label class="recipient">
+                  <img class="recipient__img" src="/assets/img/ava/2.png" alt="recipient">
+                  <input type="checkbox" class="src-only input">
+                  <span class="box"></span>
+                    <div class="recipient__info">
+                        <p class="recipient__name">Темирлан Темирбиев</p>
+                        <p class="recipient__position">Супервайзер</p>
+                    </div>
+                </label>
+              </li>
+              <li class="list-item" >
+                <label class="recipient">
+                  <img class="recipient__img" src="/assets/img/ava/3.png" alt="recipient">
+                  <input type="checkbox" class="src-only input">
+                  <span class="box"></span>
+                    <div class="recipient__info">
+                        <p class="recipient__name">Темирлан Темирбиев</p>
+                        <p class="recipient__position">Супервайзер</p>
+                    </div>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="buttons__wrapp">
+          <button (click)='unvisible()' type="submit" class="cancel">Отмена</button>
+          <button (click)='unvisible()' type="submit" class="send">Отправить</button>
+        </div>
+      </form>
+  </div>
+</section>
+
